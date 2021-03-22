@@ -12,12 +12,15 @@ function maxMin(array) {
 }
 
 
-function sumary(result){
-    return result[0] + result[1];
+function sumary(array){
+     result = maxMin(array);
+     return result[0] + result[1]
 }
 
 
 input_array = [1, 2, 10];
-result = maxMin(input_array);
+// result = maxMin(input_array);
 
-console.log(sumary(result));
+console.log(sumary(input_array));
+
+
