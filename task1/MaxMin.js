@@ -8,16 +8,16 @@ function maxMin(array) {
         if (array[i] < min) min = array[i];
     }
 
-    return { min, max };
+    return [ min, max ];
 }
 
 
-function sum(result){
-    return result.min + result.max;
+function sumary(result){
+    return result[0] + result[1];
 }
 
 
 input_array = [1, 2, 10];
 result = maxMin(input_array);
 
-console.log(sum(result));
+console.log(sumary(result));
